@@ -78,4 +78,4 @@
 
    他们是预处理器提供了扩展css的功能，变量，嵌套，混合，函数等
 
-3. 如何实现在Storybook中使用Sass并实现在修改args时自动编译Sass文件
+3. 如何实现在Storybook中使用Sass并实现在修改args时自动编译Sass文件？（暂时未能实现全局配置引入scss）
