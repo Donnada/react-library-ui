@@ -6,7 +6,11 @@ interface ButtonProps{
 }
 
 const Button = (props:ButtonProps) => {
-    return <button>{props.label}</button>
+    return(
+        <div className="container">
+            <div className="btn"><a href="#">{props.label}</a></div>
+        </div>
+    )
 }
 
 export default Button;

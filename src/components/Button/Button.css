@@ -1,3 +1,106 @@
-button{
-    font-size: 60px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1000px;
 }
+
+.bt:nth-child(1)::before,
+.bt:nth-child(1)::after {
+  background: #1d4994;
+  box-shadow: 0 0 5px #1d4994, 0 0 15px #1d4994, 0 0 30px #1d4994, 0 0 60px #1d4994;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 50px;
+}
+.btn a {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+}
+.btn a::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15),transparent);
+  transform: skewX(45deg) translate(0);
+  filter: blur(0px);
+  transition: 0.5s;
+}
+.btn:hover a {
+  letter-spacing: 3px;
+}
+.btn:hover a::before {
+  transform: skewX(45deg) translate(200px);
+}
+.btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+.btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  background: #f00;
+  width: 30px;
+  height: 10px;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  background: #f00;
+  width: 30px;
+  height: 10px;
+  left: 50%;
+  top: -5px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,9 @@
+{
+    "storybook": {
+       "builder": "@storybook/angular:start-storybook",
+       "options": {
+         "browserTarget": "my-default-project:build",
+         "styles": ["src/index.scss"]
+       }
+     } 
+   }
