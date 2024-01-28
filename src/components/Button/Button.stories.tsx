@@ -6,7 +6,9 @@ import  Button  from './Button';
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title:'Button'
+  title:'组件/Button',
+  tags: ['autodocs'],
+
 };
 
 export default meta;
@@ -31,3 +33,5 @@ export const Tertiary: Story = {
     label: '📚📕📈🤓',
   },
 };
+
+
