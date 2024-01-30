@@ -1,14 +1,6 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 1000px;
-    background-color: #1d4994;
-}
 
-
-.bt:nth-child(1)::before,
-.bt:nth-child(1)::after{
+.btn-o:nth-child(1)::before,
+.btn-o:nth-child(1)::after{
     background: #1d4994;
     box-shadow: 0 0 5px #1d4994,
     0 0 15px #1d4994,
@@ -18,7 +10,7 @@
 }
 
 
-.btn{
+.btn-o{
     position: relative;
     display: flex;
     justify-content: center;
@@ -75,6 +67,7 @@
 
                 a{
                     letter-spacing: 3px;
+                    cursor: pointer;
 
                     &::before{
                         transform: skewX(45deg) translate(200px);
@@ -125,4 +118,29 @@
         transition-delay: 0.5s;
     }
 
+}
+
+
+.btn-hw-nav{
+    font-weight: 500;
+
+    &:hover a{
+        cursor: pointer;
+        color: #f00;
+    }
+}
+
+.btn-hw-buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius:55px;
+    height: 95px;
+    width: 360px;
+
+    a{
+        color:black;
+        font-size: 40px;
+    }
 }

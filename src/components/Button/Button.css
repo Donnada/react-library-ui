@@ -1,18 +1,10 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 1000px;
-  background: #1d4994;
-}
-
-.bt:nth-child(1)::before,
-.bt:nth-child(1)::after {
+.btn-o:nth-child(1)::before,
+.btn-o:nth-child(1)::after {
   background: #1d4994;
   box-shadow: 0 0 5px #1d4994, 0 0 15px #1d4994, 0 0 30px #1d4994, 0 0 60px #1d4994;
 }
 
-.btn {
+.btn-o {
   position: relative;
   display: flex;
   justify-content: center;
@@ -23,7 +15,7 @@
   width: 250px;
   height: 50px;
 }
-.btn a {
+.btn-o a {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -47,7 +39,7 @@
   z-index: 1;
   transition: 0.5s;
 }
-.btn a::before {
+.btn-o a::before {
   content: "";
   position: absolute;
   width: 50%;
@@ -59,25 +51,26 @@
   filter: blur(0px);
   transition: 0.5s;
 }
-.btn:hover a {
+.btn-o:hover a {
   letter-spacing: 3px;
+  cursor: pointer;
 }
-.btn:hover a::before {
+.btn-o:hover a::before {
   transform: skewX(45deg) translate(200px);
 }
-.btn:hover::before {
+.btn-o:hover::before {
   bottom: 0;
   height: 50%;
   width: 80%;
   border-radius: 30px;
 }
-.btn:hover::after {
+.btn-o:hover::after {
   top: 0;
   height: 50%;
   width: 80%;
   border-radius: 30px;
 }
-.btn::before {
+.btn-o::before {
   content: "";
   position: absolute;
   background: #f00;
@@ -90,7 +83,7 @@
   transition: 0.5s;
   transition-delay: 0.5s;
 }
-.btn::after {
+.btn-o::after {
   content: "";
   position: absolute;
   background: #f00;
@@ -102,6 +95,28 @@
   border-radius: 10px;
   transition: 0.5s;
   transition-delay: 0.5s;
+}
+
+.btn-hw-nav {
+  font-weight: 500;
+}
+.btn-hw-nav:hover a {
+  cursor: pointer;
+  color: #f00;
+}
+
+.btn-hw-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 55px;
+  height: 95px;
+  width: 360px;
+}
+.btn-hw-buy a {
+  color: black;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=Button.css.map */
