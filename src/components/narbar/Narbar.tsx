@@ -1,6 +1,6 @@
 import React from "react";
 import './Narbar.css'
-import { Navitems } from "./nav-item/nav-item";
+import { Navitems } from "../dropdown/nav-item/nav-item";
 import { NavHead } from "./nav-head/nav-head";
 
 
@@ -35,9 +35,7 @@ export const Narbar = ({
                 <Navitems icon={<img src="/src/asset/white-blood-cell.png"  alt='mySvgImage' />}/>
                 <Navitems icon={<img src="/src/asset/white-blood-cell.png" alt='mySvgImage' />}/>
                 <Navitems icon={<img src="/src/asset/white-blood-cell.png"  alt='mySvgImage' />}/>
-                <Navitems icon={<img src="/src/asset/white-blood-cell.png"  alt='mySvgImage' />}>
-                    <p>hello world</p>
-                </Navitems>
+                
             </NavHead>
             
         )

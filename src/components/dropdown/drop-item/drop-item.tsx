@@ -1,4 +1,5 @@
 import React from "react";
+import './drop-item.css'
 
 
 interface dropitem{
@@ -7,7 +8,7 @@ interface dropitem{
 
 
 export const Dropitem  = ()=>{ 
-    const item = (props)=>{
+    const Item = (props)=>{
         return (
             <a href="" className="menu-item">
                 <span className="icon-button">{props.leftIcon}</span>
@@ -18,9 +19,9 @@ export const Dropitem  = ()=>{
     }
     return (
         <div className="drop">
-            <item>my profile</item>
-            <item leftIcon={<img src="/src/asset/white-blood-cell.png"  />}></item>Settings
-            <item rightIcon={<img src="/src/asset/white-blood-cell.png"   />}></item>
+            <Item>my profile</Item>
+            <Item leftIcon={<img src="/src/asset/white-blood-cell.png"  />}>Settings</Item>
+            {/* <Item rightIcon={<img src="/src/asset/white-blood-cell.png"   />}></Item> */}
 
         </div>
     )

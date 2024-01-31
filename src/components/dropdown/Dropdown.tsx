@@ -1,6 +1,7 @@
 import React from "react";
 import "./Dropdown.css";
-import {Narbar} from '../narbar/Narbar';
+import { Navitems } from "./nav-item/nav-item";
+import { Dropitem } from "./drop-item/drop-item";
 
 interface DropdownProps{
     styles?: 'hw' | 'github' |'ez'
@@ -24,7 +25,9 @@ export  const Dropdown=({
         )
     }else if(styles ==='github'){
         return (
-            <Narbar styles="git"></Narbar>
+            <Navitems icon={<img src="/src/asset/white-blood-cell.png" />}>
+                <Dropitem/>
+            </Navitems>
         )
 
     }

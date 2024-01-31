@@ -8,7 +8,7 @@ const meta:Meta<typeof Dropdown> = {
     title:'组件/Dropdown',
     tags:['autodocs'],
     parameters:{
-        layout:'centered',
+        // layout:'centered',
     }
 
 }
