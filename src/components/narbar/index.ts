@@ -1,1 +1,1 @@
-export {default} from './Narbar';
+export {Narbar} from './Narbar';

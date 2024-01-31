@@ -1,14 +1,20 @@
-import Narbar from "./Narbar";
-import React from "react";
+import {Narbar} from "./Narbar";
+import { Meta,StoryObj } from "@storybook/react";
 
-export default {
+
+const meta:Meta<typeof Narbar> ={
   component: Narbar,
   title: '组件/Narbar',
   tags: ['autodocs'],
-};
+}
 
-export const Default = {
-  
+export default meta;
+type Nb = StoryObj<typeof Narbar>;
+
+export const Default:Nb = {
+    args:{
+      styles:'ytb',
+    },
 }
 // export const cefault = {
 //   args: {
