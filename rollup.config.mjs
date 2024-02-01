@@ -4,6 +4,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import packagejson from "./package.json" assert { type: "json" };
 import postcss from "rollup-plugin-postcss"
+import sass from 'rollup-plugin-sass'
+import typescript from "rollup-plugin-typescript2";
 
 // const packagejson = require("./package.json");
 export default [
@@ -25,13 +27,14 @@ export default [
             resolve(),
             commonjs(),
             typescript({tsconfig:"./tsconfig.json"}),
-            postcss()
+            postcss(),
+            sass({ insert: true }),
         ]
     },
     {
         input:"dist/esm/types/index.d.ts",
         output:[{file:"dist/index.d.ts",format:"esm"}],
         plugins:[dts()],
-        external:[/\.css$/],
+        external:[/\.(css|scss)$/],
     }
 ]

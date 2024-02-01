@@ -1,5 +1,5 @@
 import React from "react";
-import './Narbar.css'
+import './Narbar.scss'
 import { Navitems } from "../dropdown/nav-item/nav-item";
 import { NavHead } from "./nav-head/nav-head";
 

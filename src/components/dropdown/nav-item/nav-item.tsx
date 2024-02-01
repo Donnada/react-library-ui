@@ -1,16 +1,25 @@
-import React,{useState} from "react";
+import React,{ReactNode, useState} from "react";
 import './nav-item.css'
 
 interface props{
-    icon?:string,
+    icon?:ReactNode,
+    children?:ReactNode,
 }
 
 
 export const Navitems = (items:props)=>{
-    const [open,setopen] = useState(false);
+    const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    
+    setOpen((prevOpen) => !prevOpen);
+    console.log('prevOpen')
+  };
     return(
         <li className="nav-item">
-            <a href="" className="icon-button" onClick={()=>setopen(!open)}>{items.icon}</a>
+            <a href="#" className="icon-button" onClick={toggleOpen}>
+                {items.icon}
+                </a>
             {open && items.children}
         </li>
     )

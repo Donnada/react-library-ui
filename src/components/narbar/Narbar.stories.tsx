@@ -13,7 +13,7 @@ type Nb = StoryObj<typeof Narbar>;
 
 export const Default:Nb = {
     args:{
-      styles:'ytb',
+      styles:'git',
     },
 }
 // export const cefault = {

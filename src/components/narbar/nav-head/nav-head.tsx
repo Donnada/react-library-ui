@@ -1,8 +1,13 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import './nav-head.css'
 
 
-export const NavHead = (props)=>{
+interface item{
+    children?:ReactNode,
+    style?: React.CSSProperties,
+}
+
+export const NavHead = (props:item)=>{
     return(
         <nav className="navbar">
             <ul className="navbar-nav">

@@ -1,10 +1,12 @@
 import React from "react";
-import "./Dropdown.css";
+import "./Dropdown.scss";
 import { Navitems } from "./nav-item/nav-item";
 import { Dropitem } from "./drop-item/drop-item";
+import { NavHead } from "../narbar/nav-head/nav-head";
+
 
 interface DropdownProps{
-    styles?: 'hw' | 'github' |'ez'
+    styles?: 'simp' | 'github' |'ez'
 
 }
 
@@ -25,10 +27,34 @@ export  const Dropdown=({
         )
     }else if(styles ==='github'){
         return (
-            <Navitems icon={<img src="/src/asset/white-blood-cell.png" />}>
+            <NavHead style={{ background: 'white' }}>
+                <Navitems icon={<img src="/src/asset/white-blood-cell.png" />}>
                 <Dropitem/>
-            </Navitems>
+                </Navitems>
+
+            </NavHead>
+            
         )
 
+    }else{
+        return (
+            <div className="container">
+                <nav className="nav-sim">
+                    <ul className="navlinks">
+                        <li className="nav-link"><a href="">Home</a></li>
+                        <li className="nav-link">
+                            <a href="">Services</a>
+                            <ul className="dropd">
+                                <li>Service1</li>
+                                <li>Service2</li>
+                                <li>Service3</li>
+                            </ul>
+                        </li>
+                        <li className="nav-link"><a href="">About</a></li>
+                        <li className="nav-link"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        )
     }
 }
