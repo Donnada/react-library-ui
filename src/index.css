@@ -11,13 +11,3 @@ a{
 body{
     min-height: 100vh;
 }
-.container{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    left: 0;
-    top:0;
-    width: 100%;
-}

@@ -39,19 +39,26 @@ export  const Dropdown=({
     }else{
         return (
             <div className="container">
-                <nav className="nav-sim">
-                    <ul className="navlinks">
-                        <li className="nav-link"><a href="">Home</a></li>
+                <nav className="navbar-drop">
+                    <ul className="nav-links">
                         <li className="nav-link">
-                            <a href="">Services</a>
-                            <ul className="dropd">
-                                <li>Service1</li>
-                                <li>Service2</li>
-                                <li>Service3</li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li className="nav-link services">
+                            <a href="#">Services
+                            </a>
+                            <ul className="drop-down">
+                                <li className="nav-link">Service 1</li>
+                                <li className="nav-link">Service 2</li>
+                                <li className="nav-link">Service 3</li>
                             </ul>
                         </li>
-                        <li className="nav-link"><a href="">About</a></li>
-                        <li className="nav-link"><a href="">Contact</a></li>
+                        <li className="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li className="nav-link">
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
