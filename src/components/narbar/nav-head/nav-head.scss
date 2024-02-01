@@ -1,7 +1,7 @@
 @import "../../dropdown/Dropdown";
 .navbar {
     height: $nav-size;
-    background-color: white;
+    background-color: $bg;
     padding: 0 1rem;
     border-bottom: $border;
 }

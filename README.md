@@ -82,6 +82,7 @@
 
 3. 如何实现在Storybook中使用Sass并实现在修改args时自动编译Sass文件？（暂时未能实现全局配置引入scss）
 4. 在修改了sass样式之后记得编译为css文件才能运行
+5.  如何尝试只有sass取消css呢？安装相应的npm install rollup rollup-plugin-typescript2 rollup-plugin-sass --save-dev 利用rollup编译。这样scss只会在相应被导入的地方引入样式
 
 
 

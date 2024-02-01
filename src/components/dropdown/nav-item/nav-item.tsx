@@ -1,5 +1,5 @@
 import React,{ReactNode, useState} from "react";
-import './nav-item.css'
+import './nav-item.scss'
 
 interface props{
     icon?:ReactNode,

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import './nav-head.css'
+import './nav-head.scss'
 
 
 interface item{

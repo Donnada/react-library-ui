@@ -1,5 +1,5 @@
 import React, { useState,ReactNode } from "react";
-import './drop-item.css'
+import './drop-item.scss'
 import {CSSTransition} from 'react-transition-group';
 
 
